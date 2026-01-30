@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()  # Загружает .env файл
 # Создаем экземпляр бота
-bot = telebot.TeleBot(os.getenv('BOT_TOKEN'))
+bot = telebot.TeleBot(os.getenv('8397640058:AAFqMAnMapEMBsiwy6kV9W5AEocVUGn8xTc'))
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
