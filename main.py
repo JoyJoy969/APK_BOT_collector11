@@ -1,9 +1,19 @@
-
-import tgbotzero
+from tgbotzero import *
 
 TOKEN = '8397640058:AAFqMAnMapEMBsiwy6kV9W5AEocVUGn8xTc'
 
+
 def on_message(msg: str):
-    return "Твоё сообщение: " + msg
-    
+    return [
+        f"Мяу-гав!",
+        Image('cat.png'),
+        Image('dog.png'),
+        Button('Класс!', 'btn')
+    ]
+
+
+def on_button_btn(data):
+    return 'Ага!'
+
+
 run_bot()
